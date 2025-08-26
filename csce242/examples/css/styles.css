@@ -1,0 +1,48 @@
+/* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("images/backgorund.webp");
+    background-size:cover;
+}
+
+#content {
+    background: rgb(245, 235, 90);
+    width: 70%;
+    /* Padding = inside div ; Margin = outside div */
+    margin: auto;   /* This will center the div */
+    padding: 1%;  /* can be done in % or pixels */
+    border-radius: 10px; /* round corners */
+
+}
+
+/* Tables */
+table {
+    border-collapse: collapse; /* Removes the double border */
+}
+
+td, th {
+    /* border: width, line type, color; */
+    border: 3px solid rgb(104, 82, 82);
+    padding: 5px 10px; /* Top and bottom 5, right and left 10 */
+}
+
+th {
+    background: rgb(247, 188, 130);
+}
+
+/* Images */
+#giraffe-pic {
+    /* box-shadow: right, left, color */
+    box-shadow: -5px -5px gray;
+}
+
+
+/* Typogoraphy (Font) */
+h1 {
+    color: peru;
+}
+
+h2 {
+    color: peru;
+}
+
