@@ -1,0 +1,47 @@
+/* 02basiccss Style Sheet */
+
+/* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background: url(images/background.jpg);
+    background-size: cover;
+}
+
+#content {
+    background-color: rgb(11, 11, 90);
+    color: #f1f1f1;
+    width: 75%;
+    margin: auto;
+    padding: 5%;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 2px solid;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+
+
+/* Images */
+img {
+    height: 500px;
+    width: 600px; 
+    box-shadow: 5px 5px #7c04dd;
+    margin: 1%;
+}
+
+/* Topography */
+h1 {
+    color: #e1bfff;
+}
+
+h2 {
+    color: #d2aff0;
+}
