@@ -23,6 +23,7 @@ body {
 
 #main-nav ul {
     list-style-type: none; /* Remove Bullets */
+    padding-left: 0;
 }
 
 #main-nav li {
@@ -35,9 +36,14 @@ body {
 
 #main-nav a {
     color: white;
-    padding: 10px 0px;
+    padding: 10px    0px;
     display: block;
     text-decoration: none; /* Remove Underlines */
+}
+
+#main-nav a:hover {
+    background: white;
+    color:#036800;
 }
 
 /* Typogoraphy (Font) */
@@ -57,6 +63,29 @@ h1 {
     #content {
         width: 70%;
     }
+    /* Columns */
+    .columns {
+        display:flex;
+    }
+    /* Main Nav */
+    #main-nav li {
+        flex: 1px;
+    }
+
+    #main-nav li, #main-nav li:first-child {
+        border: none;
+    }
+
+    #main-nav a {
+        padding: 5px;
+        text-align: center;
+    }
+    #main-nav a:hover {
+        background:rgb(96, 156, 5);
+        color: white;
+        border-bottom: 1px solid white;
+    }
+
 }
 
 
