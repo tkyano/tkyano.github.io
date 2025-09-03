@@ -1,0 +1,236 @@
+/* General Styling */
+body {
+    background-color: rgb(255, 236, 212);
+    color: rgb(93, 93, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#content {
+    width: 95%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+header h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Navigation Bar */
+#nav-bar {
+    background-color: pink;
+    display: flex;
+    padding: 3px;
+    flex-direction: column;
+    list-style: none;
+    margin: 3px;
+    flex-wrap: wrap;
+}
+
+#nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-bar li a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 10px;
+    display: block;
+}
+
+#nav-bar li, .nav-bar li:first-child {
+    border-right: none;
+}
+
+/* Idea Boxes */
+.idea-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.idea-box {
+    display: flex;
+    align-items: flex-start;
+    background-color: rgb(187, 182, 182);
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.idea-box img {
+    width: 200px;
+    height: 400px;
+    margin-right: 15px;
+}
+
+.idea-spacer {
+    flex: 1 1 47%;
+}
+
+.idea-box h2 {
+    font-weight: bold;
+}
+
+/* Gallery Section*/
+.gallery {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.links {
+    background-color: pink;
+    padding: 5px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    color: white;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links ul li a{
+    color: white;
+    text-decoration: underline;
+    display: block;
+    text-align: left;
+}
+
+.content-grid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.title-box {
+    background-color: #9bbebe;
+    padding: 3px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+.title-box img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-box {
+    background-color: #9bbebe;
+    padding: 3px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+.gallery-box img {
+    width: 100%;
+    height: auto;
+}
+
+/* Foooter */
+.main-footer {
+    background-color: pink;
+    padding: 3px;
+    text-align: center;
+    color: rgb(93, 93, 255);
+}
+
+.main-footer a {
+    color: rgb(93, 93, 255);
+}
+
+
+/* Media Query for larger screens */
+@media (min-width: 780px) {
+
+    .columns {
+        display: flex;
+    }
+
+    #nav-bar li {
+        flex: 1px;
+    }
+
+    #nav-bar li, .nav-bar li:first-child {
+        border: none;
+    }
+
+    #nav-bar a {
+        padding: 5px;
+        text-align: center;
+    }
+
+    #nav-bar a:hover {
+        background: rgb(190, 44, 68);
+        color: white;
+        border-bottom: 1px solid white;
+    }
+
+
+    /* 2 colyumns for the idea section */
+    .idea-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .idea-box {
+        flex: 1 1 45%;
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        text-align: left;
+    }
+
+    .idea-box img {
+        width: 200px;
+        height: 400px;
+        margin-right: 15px; /* margin between image and text */
+    }
+
+    .idea-box h2 {
+        font-weight: bold;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: row; /* Aligns the links section with the rows of the gallery */
+        align-items: stretch;
+    }
+
+    .links {
+        flex: 0 0 15%;
+    }
+
+    /* Set content grid to flexbox to allow for wrapping */
+    .content-grid {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .title-box, .gallery-box {
+        /* Use a fixed percentage to ensure 5 items fit on a single line with space-between */
+        flex: 1 1 19%;
+    }
+}
