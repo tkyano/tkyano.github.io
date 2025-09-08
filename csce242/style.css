@@ -1,5 +1,5 @@
 /* Main Page Style Sheet */
- 
+
 /* Structure */
 
 body {
@@ -87,9 +87,12 @@ h3 {
 
 /* Larger Devices */
 @media only screen and (min-width: 760px) {
-    #main-content {
+    #main-assignments, 
+    #main-projects {
         display: flex;
+        flex-wrap: wrap;
         gap: 20px;
+        justify-content: space-between;
     }
 
     .col1of3 {
