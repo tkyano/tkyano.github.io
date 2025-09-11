@@ -35,11 +35,31 @@
                 <h2>JavaScript Introduction</h2>
             </header>
             <main class="columns examples">
-                
+                <section>
+                    <button id="btn-click-me">Click Me</button>
+                    <p id="p-welcome"></p>
+                </section>
+                <section>
+                    <button id="happy-btn">Happy Button</button>
+                    <button id="sad-btn">Sad Button</button>
+                    <button id="clear-btn">Clear</button>
+                    <p id="p-feeling"></p>
+                </section>
+                <section>
+                    <p> <!--Label "for" and input id need to match-->
+                        <label for="txt-emotion">Enter Emotion:</label>
+                        <input type="text" id="txt-emotion">
+                    </p>
+                    <p id="p-emotion"></p>
+                    <img id="img-emotion" src="https://dummyimage.com/100x100/000/fff" class="hidden">
+                </section>
             </main>
             <footer>
                 <p>&copy; myname</p>
             </footer>
         </div>
+        <!--Link to JS here-->
+        <script src="js/intro.js"></script>
+        <script src="js/toggle-nav.js"></script>
     </body>
 </html>
