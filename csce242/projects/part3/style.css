@@ -1,0 +1,123 @@
+/* Color variables */
+:root {
+    --primary-red: #C8102E;
+    --accent-red: #E94E77;
+    --dark-gray: #1E1E1E;
+    --mid-gray: #3A3A3A;
+    --light-gray: #E0E0E0;
+    --white: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--dark-gray);
+    color: var(--white);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-red);
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+}
+
+/* Logo and brand */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+#main-logo {
+    height: 50px;
+    width: 50px;
+}
+
+.brand-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+/* Hamburger button */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* Navigation base styles */
+#main-nav {
+    display: none; /* Hidden on small screens by default */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#main-nav.open {
+    display: flex;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    padding: 0.75rem 1rem;
+    display: block;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid var(--light-gray);
+}
+
+#main-nav a:hover {
+    color: var(--accent-red);
+}
+
+/* ================================
+   ✅ LARGE SCREENS (min-width)
+================================== */
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+
+    header {
+        flex-wrap: nowrap;
+    }
+
+    #main-nav {
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 0;
+        margin-top: 0;
+        width: auto;
+    }
+
+    #main-nav a {
+        display: inline-block;
+        padding: 0 1rem;
+        border: none;
+        width: auto;
+        text-align: left;
+        position: relative;
+    }
+
+    /* Pipe separator */
+    #main-nav a:not(:last-child)::after {
+        content: "|";
+        color: var(--white);
+        position: absolute;
+        right: 0;
+        padding-left: 1rem;
+    }
+}
