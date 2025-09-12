@@ -3,32 +3,36 @@
     <head>
         <title>Project Part 3: HTML and CSS</title>
         <link rel="stylesheet" href="style.css">
-    </head> 
+    </head>
     <body>
         <div id="content">
             <header>
                 <div class="logo-container">
                     <img id="main-logo" src="https://ph.loremipsums.org/100x100/CCCCCC/333333/svg">
+                    <h1>ForgeBloom</h1>
                 </div>
-                <h1>ForgeBloom</h1>
+                <!--Based on Portia's code from js-intro.html file-->
+                <div id="toggle-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
 
-                <!--Burger :)-->
-                <button class="hamburger" aria-label="Toggle navigation">
-                    &#9776;  
-                </button>
-                <!--Main-Nav-->
                 <nav id="main-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Browse Cards</a></li>
-                    <li><a href="#">Create a Deck</a></li>
-                    <li><a href="#">My Decks</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Login</a></li>
+                    <ul id="nav-items" class="hide-small">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Browse Cards</a></li>
+                        <li><a href="#">Create a Deck</a></li>
+                        <li><a href="#">My Decks</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
                 </nav>
             </header>
         </div>
 
         <!--JS Script-->
-        <script src="part3.js"></script>
+        <script src="js/part3.js"></script>
+        <script src="js/toggle-nav.js"></script>
     </body>
 </html>
