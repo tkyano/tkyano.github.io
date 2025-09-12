@@ -1,4 +1,3 @@
-/* Color variables */
 :root {
     --primary-red: #C8102E;
     --accent-red: #E94E77;
@@ -10,7 +9,6 @@
 
 body {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--dark-gray);
     color: var(--white);
 }
@@ -24,7 +22,30 @@ header {
     flex-wrap: wrap;
 }
 
-/* Logo and brand */
+h1 {
+    padding-right: 75px;
+}
+
+/* Based on Portia's style sheet with js-intro */
+#toggle-nav {
+    display: block;
+    margin-left: auto;
+}
+
+#toggle-nav div {
+    width:25px;
+    height:2px;
+    background-color:white;
+    margin:6px 0;
+}
+
+#main-nav a:not(:last-child)::after {
+    content: "|";
+    color: var(--white);
+    position: absolute;
+    right: 0;
+    padding-left: 1rem;
+}
 .logo-container {
     display: flex;
     align-items: center;
@@ -32,34 +53,24 @@ header {
 }
 
 #main-logo {
-    height: 50px;
-    width: 50px;
+    height: 125px;
+    width: 125px;
+    border-radius: 25px;
 }
 
-.brand-name {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: var(--white);
-}
-
-/* Hamburger button */
-.hamburger {
-    display: none;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    color: var(--white);
-    cursor: pointer;
-    margin-left: auto;
-}
-
-/* Navigation base styles */
 #main-nav {
-    display: none; /* Hidden on small screens by default */
+    display: none;
     flex-direction: column;
     align-items: center;
     width: 100%;
     margin-top: 1rem;
+}
+
+#main-nav ul {
+    list-style-type: none; /* Bullet */
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 #main-nav.open {
@@ -67,9 +78,8 @@ header {
 }
 
 #main-nav a {
-    text-decoration: none;
+    text-decoration: none; /* Underline */
     color: var(--white);
-    font-weight: bold;
     padding: 0.75rem 1rem;
     display: block;
     text-align: center;
@@ -81,20 +91,22 @@ header {
     color: var(--accent-red);
 }
 
-/* ================================
-   ✅ LARGE SCREENS (min-width)
-================================== */
-@media (min-width: 768px) {
-    .hamburger {
-        display: none;
-    }
+.hide-small {
+    display: none;
+    flex-direction: column;
+}
 
+@media (min-width: 768px) {
     header {
         flex-wrap: nowrap;
     }
 
+    #toggle-nav {
+        display: none;
+    }
+
     #main-nav {
-        display: flex !important;
+        display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: flex-end;
@@ -112,7 +124,11 @@ header {
         position: relative;
     }
 
-    /* Pipe separator */
+    #main-nav ul {
+        list-style-type: none; /* Bullet */
+        flex-direction: row
+    }
+
     #main-nav a:not(:last-child)::after {
         content: "|";
         color: var(--white);
@@ -120,4 +136,9 @@ header {
         right: 0;
         padding-left: 1rem;
     }
+
+    .hide-small {
+        display: flex;
+    }
 }
+ 
