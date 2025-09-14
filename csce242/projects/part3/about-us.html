@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project Part 3: HTML and CSS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="content">
+            <header>
+                <div class="logo-container">
+                    <img id="main-logo" src="https://ph.loremipsums.org/100x100/CCCCCC/333333/svg">
+                    <h1>ForgeBloom</h1>
+                </div>
+                <!--Based on Portia's code from js-intro.html file-->
+                <div id="toggle-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <nav id="main-nav">
+                    <ul id="nav-items" class="hide-small">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse-cards.html">Browse Cards</a></li>
+                        <li><a href="create-deck.html">Create a Deck</a></li>
+                        <li><a href="my-decks.html">My Decks</a></li>
+                        <li><a href="about-us.html" class="active-tab">About Us</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="about-us-container">
+                <section class="mission">
+                    <h2>Our Mission</h2>
+                    <p>ForgeBloom was created to make building Magic: The Gathering decks easier, especially for new and casual players. We know that many deckbuilding sites can feel overwhelming, full of advanced features and complicated layouts.</p>
+                    <p>ForgeBloom is different — we focus on simplicity, clarity, and helping you grow as a player. Whether you're just starting out or experimenting with new ideas, ForgeBloom gives you the space to:</p>
+                    <ul>
+                        <li>Search for cards quickly</li>
+                        <li>Build and save decks easily</li>
+                        <li>Track your progress and improve over time</li>
+                    </ul>
+                    <p>We believe that deckbuilding should be fun, not frustrating. Our goal is to give players a clean and easy-to-use tool that lets them focus on what they love: creating and playing great decks.</p>
+                </section>
+
+                <section class="contact-us">
+                    <h2>Contact Us</h2>
+                    <p>Questions, feedback, or bug reports? Reach out here!</p>
+                    <p> Email: <a href="#">support@forgebloom.com</a></p>
+                </section>
+            </main>
+        </div>
+
+        <!--JS Script-->
+        <script src="js/part3.js"></script>
+        <script src="js/toggle-nav.js"></script>
+    </body>
+</html>

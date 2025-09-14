@@ -1,4 +1,4 @@
-/* Main Page Style Sheet */
+/* Base layout of CSS from homepage */
 
 /* Structure */
 
@@ -31,11 +31,8 @@ body {
 }
 
 #main-footer {
-    background-color: #4a4a4a;
     padding: 15px;
-    border: 1px solid #000000;
     text-align: center;
-    margin-top: 20px;
 }
 
 /* Columns / Cards */
@@ -45,14 +42,19 @@ body {
     border: 1px solid #000000;
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+.col1of3 p {
+    text-align: left;
 }
 
 .col1of3 img {
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
     max-width: 300px;
     height: auto;
-    margin: 10px 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border: 2px solid #000000;
     display: block;
 }
@@ -80,6 +82,23 @@ h1 {
 h2 {
     color: #d9a5a5;
     text-align: center;
+}
+
+/* Indenting in the JS File */
+.indent-0 {
+    margin-left: 0;
+}
+
+.indent-1 {
+    margin-left: 15px;
+}
+
+.indent-2 {
+    margin-left: 30px;
+}
+
+.indent-3 {
+    margin-left: 45px;
 }
 
 /* Larger Devices */

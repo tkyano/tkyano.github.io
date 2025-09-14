@@ -20,15 +20,85 @@
 
                 <nav id="main-nav">
                     <ul id="nav-items" class="hide-small">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Browse Cards</a></li>
-                        <li><a href="#">Create a Deck</a></li>
-                        <li><a href="#">My Decks</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Login</a></li>
+                        <li><a href="index.html" class="active-tab">Home</a></li>
+                        <li><a href="browse-cards.html">Browse Cards</a></li>
+                        <li><a href="create-deck.html">Create a Deck</a></li>
+                        <li><a href="my-decks.html">My Decks</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="login.html">Login</a></li>
                     </ul>
                 </nav>
             </header>
+
+            <main class="homepage-layout">
+            <aside class="featured-cards">
+                <h2>Featured Cards</h2>
+
+                <a href="#" class="featured-card">
+                <img src="https://ph.loremipsums.org/100x100/CCCCCC/333333/svg" alt="Card Image">
+                <div class="card-info">
+                    <p>Card Name</p>
+                    <p>Description of the card, and the text</p>
+                </div>
+                </a>
+
+                <a href="#" class="featured-card">
+                <img src="https://ph.loremipsums.org/100x100/CCCCCC/333333/svg" alt="Card Image">
+                <div class="card-info">
+                    <p>Card Name</p>
+                    <p>Description of the card, and the text</p>
+                </div>
+                </a>
+            </aside>
+
+            <section class="featured-decks">
+                <h2>Featured Decks</h2>
+                <div class="deck-row">
+
+                <a href="#" class="featured-deck">
+                    <img src="https://ph.loremipsums.org/100x100/CCCCCC/333333/svg" alt="Deck Image">
+                    <div class="deck-info">
+                    <p>Deck Name</p>
+                    <p>Little description here of the deck</p>
+                    </div>
+                </a>
+
+                <a href="#" class="featured-deck">
+                    <img src="https://ph.loremipsums.org/100x100/CCCCCC/333333/svg" alt="Deck Image">
+                    <div class="deck-info">
+                    <p>Deck Name</p>
+                    <p>Little description here of the deck</p>
+                    </div>
+                </a>
+
+                <a href="#" class="featured-deck">
+                    <img src="https://ph.loremipsums.org/100x100/CCCCCC/333333/svg" alt="Deck Image">
+                    <div class="deck-info">
+                    <p>Deck Name</p>
+                    <p>Little description here of the deck</p>
+                    </div>
+                </a>
+
+                </div>
+
+                <div class="search-bars">
+                    <div class="search-box">
+                        <label for="search-cards">Search Cards</label>
+                        <!--Using placeholder like https://www.w3schools.com/jsref/prop_text_placeholder.asp-->
+                        <input type="text" id="search-cards" placeholder="Type to search cards...">
+                    </div>
+
+                    <div class="search-box">
+                        <label for="search-decks">Search Decks</label>
+                        <!--Using placeholder like https://www.w3schools.com/jsref/prop_text_placeholder.asp-->
+                        <input type="text" id="search-decks" placeholder="Type to search decks...">
+                    </div>
+                </div>
+            </section>
+
+            </main>
+
+            
         </div>
 
         <!--JS Script-->
