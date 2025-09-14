@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project Part 3: HTML and CSS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="content">
+            <header>
+                <div class="logo-container">
+                    <img id="main-logo" src="https://ph.loremipsums.org/100x100/CCCCCC/333333/svg">
+                    <h1>ForgeBloom</h1>
+                </div>
+                <!--Based on Portia's code from js-intro.html file-->
+                <div id="toggle-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <nav id="main-nav">
+                    <ul id="nav-items" class="hide-small">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse-cards.html" class="active-tab">Browse Cards</a></li>
+                        <li><a href="create-deck.html">Create a Deck</a></li>
+                        <li><a href="my-decks.html">My Decks</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="browse-layout">
+                <aside class="filter-sidebar">
+                    <h2>Filter Cards</h2>
+
+                    <div class="filter-group">
+                        <h3>Color</h3>
+                        <label><input type="checkbox">White</label>
+                        <label><input type="checkbox">Black</label>
+                        <label><input type="checkbox">Blue</label>
+                        <label><input type="checkbox">Red</label>
+                        <label><input type="checkbox">Green</label>
+                        <label><input type="checkbox">Colorless</label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Cost</h3>
+                        <select id="cost-operator">
+                            <option value="=">=</option>
+                            <option value="<">&lt;</option>
+                            <option value=">">&gt;</option>
+                        </select>
+                        <input type="number" id="cost-value" placeholder="Mana Cost">
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Card Type</h3>
+                        <label><input type="checkbox">Creature</label>
+                        <label><input type="checkbox">Enchantment</label>
+                        <label><input type="checkbox">Land</label>
+                        <label><input type="checkbox">Instant</label>
+                        <label><input type="checkbox">Sorcery</label>
+                        <label><input type="checkbox">Planeswalker</label>
+                        <label><input type="checkbox">Artifact</label>
+                        <label><input type="checkbox">Battle</label>
+                    </div>
+                </aside>
+
+                <section class="card-results">
+                    <div class="search-box">
+                        <label for="card-search">Search Cards</label>
+                        <input type="text" id="card-search" placeholder="Type to search cards...">
+                    </div>
+
+                    <div class="card-grid">
+                        <div class="card">
+                            <img src="https://ph.loremipsums.org/100x100/CCCCCC/333333/svg">
+                            <div class="card-info">
+                                <h3>Card Name</h3>
+                                <p>Little card descriptions......</p>
+                            </div>
+                        </div>
+
+                         <div class="card">
+                            <img src="https://ph.loremipsums.org/100x100/CCCCCC/333333/svg">
+                            <div class="card-info">
+                                <h3>Card Name</h3>
+                                <p>Little card descriptions......</p>
+                            </div>
+                        </div>
+
+                         <div class="card">
+                            <img src="https://ph.loremipsums.org/100x100/CCCCCC/333333/svg">
+                            <div class="card-info">
+                                <h3>Card Name</h3>
+                                <p>Little card descriptions......</p>
+                            </div>
+                        </div>
+
+                         <div class="card">
+                            <img src="https://ph.loremipsums.org/100x100/CCCCCC/333333/svg">
+                            <div class="card-info">
+                                <h3>Card Name</h3>
+                                <p>Little card descriptions......</p>
+                            </div>
+                        </div>
+
+                         <div class="card">
+                            <img src="https://ph.loremipsums.org/100x100/CCCCCC/333333/svg">
+                            <div class="card-info">
+                                <h3>Card Name</h3>
+                                <p>Little card descriptions......</p>
+                            </div>
+                        </div>
+
+                         <div class="card">
+                            <img src="https://ph.loremipsums.org/100x100/CCCCCC/333333/svg">
+                            <div class="card-info">
+                                <h3>Card Name</h3>
+                                <p>Little card descriptions......</p>
+                            </div>
+                        </div>
+
+                         <div class="card">
+                            <img src="https://ph.loremipsums.org/100x100/CCCCCC/333333/svg">
+                            <div class="card-info">
+                                <h3>Card Name</h3>
+                                <p>Little card descriptions......</p>
+                            </div>
+                        </div>
+
+                         <div class="card">
+                            <img src="https://ph.loremipsums.org/100x100/CCCCCC/333333/svg">
+                            <div class="card-info">
+                                <h3>Card Name</h3>
+                                <p>Little card descriptions......</p>
+                            </div>
+                        </div>
+
+                         <div class="card">
+                            <img src="https://ph.loremipsums.org/100x100/CCCCCC/333333/svg">
+                            <div class="card-info">
+                                <h3>Card Name</h3>
+                                <p>Little card descriptions......</p>
+                            </div>
+                        </div>
+
+                         <div class="card">
+                            <img src="https://ph.loremipsums.org/100x100/CCCCCC/333333/svg">
+                            <div class="card-info">
+                                <h3>Card Name</h3>
+                                <p>Little card descriptions......</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!--JS Script-->
+        <script src="js/part3.js"></script>
+        <script src="js/toggle-nav.js"></script>
+    </body>
+</html>

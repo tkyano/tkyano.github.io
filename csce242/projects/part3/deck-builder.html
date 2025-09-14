@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project Part 3: HTML and CSS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="content">
+            <header>
+                <div class="logo-container">
+                    <img id="main-logo" src="https://ph.loremipsums.org/100x100/CCCCCC/333333/svg">
+                    <h1>ForgeBloom</h1>
+                </div>
+                <!--Based on Portia's code from js-intro.html file-->
+                <div id="toggle-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <nav id="main-nav">
+                    <ul id="nav-items" class="hide-small">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse-cards.html">Browse Cards</a></li>
+                        <li><a href="create-deck.html">Create a Deck</a></li>
+                        <li><a href="my-decks.html">My Decks</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="deck-builder-page">
+                <h1>Your Deck Title Here</h1>
+                <div class="deck-builder-content">
+                    <section class="card-search">
+                        <h2>Search Cards</h2>
+                        <div class="search-bar-container">
+                            <div class="search-bar">
+                                <input type="search" id="card-search-input" placeholder="Search cards..." />
+                            </div>
+                        </div>
+                        <div id="card-results"></div>
+                    </section>
+
+                    <section class="current-deck">
+                        <h2>Your Deck</h2>
+                        <ul id="deck-list"></ul>
+                    </section>
+
+                    <section class="card-list">
+                        <div class="card-entry">
+                            <p>Card Name</p>
+                            <p>desctriotion lorem ipsum little descrtiption here</p>
+                            <div class="card-actions">
+                                <button>Remove</button>
+                            </div>
+                        </div>
+                        <div class="card-entry">
+                            <p>Card Name</p>
+                            <p>desctriotion lorem ipsum little descrtiption here</p>
+                            <div class="card-actions">
+                                <button>Remove</button>
+                            </div>
+                        </div>
+                        <div class="card-entry">
+                            <p>Card Name</p>
+                            <p>desctriotion lorem ipsum little descrtiption here</p>
+                            <div class="card-actions">
+                                <button>Remove</button>
+                            </div>
+                        </div>
+                        <div class="card-entry">
+                            <p>Card Name</p>
+                            <p>desctriotion lorem ipsum little descrtiption here</p>
+                            <div class="card-actions">
+                                <button>Remove</button>
+                            </div>
+                        </div>
+                        <div class="card-entry">
+                            <p>Card Name</p>
+                            <p>desctriotion lorem ipsum little descrtiption here</p>
+                            <div class="card-actions">
+                                <button>Remove</button>
+                            </div>
+                        </div>
+                        <div class="card-entry">
+                            <p>Card Name</p>
+                            <p>desctriotion lorem ipsum little descrtiption here</p>
+                            <div class="card-actions">
+                                <button>Remove</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+
+        </div>
+
+        <!--JS Script-->
+        <script src="js/part3.js"></script>
+        <script src="js/toggle-nav.js"></script>
+    </body>
+</html>

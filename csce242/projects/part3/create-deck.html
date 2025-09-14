@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project Part 3: HTML and CSS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="content">
+            <header>
+                <div class="logo-container">
+                    <img id="main-logo" src="https://ph.loremipsums.org/100x100/CCCCCC/333333/svg">
+                    <h1>ForgeBloom</h1>
+                </div>
+                <!--Based on Portia's code from js-intro.html file-->
+                <div id="toggle-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <nav id="main-nav">
+                    <ul id="nav-items" class="hide-small">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse-cards.html">Browse Cards</a></li>
+                        <li><a href="create-deck.html" class="active-tab">Create a Deck</a></li>
+                        <li><a href="my-decks.html">My Decks</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="deck-builder-layout">
+                <section class="deck-presets">
+                    <h2>Choose a Deck Preset</h2>
+                    <div class="preset-flex">
+                        <a href="deck-builder.html" class="preset-card">
+                            <h3>Starter</h3>
+                            <p>Lorem ipsum short description here</p>
+                        </a>
+                        <a href="deck-builder.html" class="preset-card">
+                            <h3>Aggro</h3>
+                            <p>Lorem ipsum short description here</p>
+                        </a>
+                        <a href="deck-builder.html" class="preset-card">
+                            <h3>Control</h3>
+                            <p>Lorem ipsum short description here</p>
+                        </a>
+                        <a href="deck-builder.html" class="preset-card">
+                            <h3>Midrange</h3>
+                            <p>Lorem ipsum short description here</p>
+                        </a>
+                        <a href="deck-builder.html" class="preset-card">
+                            <h3>Mono Base</h3>
+                            <p>Lorem ipsum short description here</p>
+                        </a>
+                        <a href="deck-builder.html" class="preset-card">
+                            <h3>Chaos</h3>
+                            <p>Lorem ipsum short description here</p>
+                        </a>
+                    </div>
+                </section>
+
+                <aside class="deck-tools">
+                    <button class="new-deck-btn">New Deck</button>
+
+                    <div class="filter-group">
+                        <h3>Format</h3>
+                        <select>
+                            <option value="any"></option>
+                            <option>Commander</option>
+                            <option>Standard</option>
+                            <option>Pauper</option>
+                            <option>Modern</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Colors</h3>
+                        <label><input type="checkbox">White</label>
+                        <label><input type="checkbox">Black</label>
+                        <label><input type="checkbox">Blue</label>
+                        <label><input type="checkbox">Red</label>
+                        <label><input type="checkbox">Green</label>
+                        <label><input type="checkbox">Colorless</label>
+                    </div>
+
+                    <div class="filter-group">
+                        <select>
+                            <option>Any</option>
+                            <option>&lt; 60</option>
+                            <option>60 Cards</option>
+                            <option>100 Cards</option>
+                        </select>
+                    </div>
+                </aside>
+            </main>
+        </div>
+
+        <!--JS Script-->
+        <script src="js/part3.js"></script>
+        <script src="js/toggle-nav.js"></script>
+    </body>
+</html>
