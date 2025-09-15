@@ -571,7 +571,7 @@ h1 {
 }
 
 .deck-info {
-    background-color: var(--mid-gray);
+    background-color: var(--white);
     padding: 1rem 1.5rem;
     border-radius: 8px;
     margin-bottom: 2rem;
