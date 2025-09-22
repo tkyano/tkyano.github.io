@@ -1,0 +1,207 @@
+/* Simplified Spring Color Scheme */
+:root {
+    --spring-green: #88D498;
+    --spring-pink: #FF6FB5;
+    --white: #FFFFFF;
+}
+
+/* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--spring-green);
+    color: #333333;
+}
+
+#content {
+    position: relative;
+    background-color: var(--white);
+    color: #333333;
+    width: 80%;
+    margin: auto;
+    padding: 5%;
+    border: 2px solid var(--spring-green);
+}
+
+#main-header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--spring-pink);
+}
+
+
+#main-projects {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#main-footer {
+    padding: 15px;
+    border: none;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--spring-green);
+}
+
+#main-nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Used: https://www.w3schools.com/howto/howto_css_shapes.asp to create the triangles */
+.triangle-nav {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid var(--spring-pink);
+}
+
+
+#main-nav {
+    display: none;
+    text-align: left;
+    margin-top: 10px;
+}
+
+#main-nav.open {
+    display: block;
+}
+
+#main-box img {
+    text-align: center;
+}
+
+/* Used: https://www.w3schools.com/howto/howto_css_shapes.asp to create the triangles */
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 15px solid var(--spring-pink);
+}
+
+.col1of3 {
+    background-color: var(--spring-pink);
+    padding: 15px;
+    border: none;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+}
+
+.col1of3 img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 10px 0;
+    border: 3px solid var(--white);
+    display: block;
+}
+
+.col1of3 h4 {
+    text-align: center;
+    color: var(--white);
+}
+
+/* Links */
+a {
+    color: var(--spring-pink);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--spring-green);
+}
+
+h1 {
+    color: var(--spring-pink);
+}
+
+h3 {
+    color: var(--spring-green);
+    text-align: center;
+}
+
+#exercise1 {
+    margin: 20px auto;
+    text-align: center;
+    align-items: center;
+    background-color: var(--spring-pink);
+    padding: 15px;
+    color: var(--white);
+}
+
+#exercise1 img {
+    display: inline-block;
+}
+
+#exercise1 input[type="range"] {
+    width: 75%;
+    margin: 10px;
+    display: inline-block;
+}
+
+#exercise2 {
+    margin: 20px auto;
+    text-align: center;
+    background-color: var(--spring-pink);
+    padding: 15px;
+    color: var(--white);
+}
+
+#exercise2 h4 {
+    margin-bottom: 10px;
+}
+
+#clock {
+    margin-top: 10px;
+}
+
+/* Larger Devices */
+@media only screen and (min-width: 760px) {
+    #main-assignments, 
+    #main-projects {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .col1of3 {
+        flex: 1 1 30%;
+    }
+
+    #main-nav {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    }
+
+    #toggle-nav {
+        display: none;
+    }
+
+    #main-nav ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #main-nav li:not(:last-child)::after {
+        content: "|";
+        margin-left: 20px;
+        color: var(--spring-green);
+    }
+}

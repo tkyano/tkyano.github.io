@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project Part 3: HTML and CSS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="content">
+            <header>
+                <div class="logo-container">
+                    <img id="main-logo" src="images/forgebloom-logo.png">  
+                    <h1 id="forge-h1">ForgeBloom</h1>
+                </div>
+                <!--Based on Portia's code from js-intro.html file-->
+                <div id="toggle-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <nav id="main-nav">
+                    <ul id="nav-items" class="hide-small">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse-cards.html">Browse Cards</a></li>
+                        <li><a href="create-deck.html">Create a Deck</a></li>
+                        <li><a href="my-decks.html">My Decks</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="login.html" class="active-tab">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+        <main class="login-container">
+            <form id="loginForm" class="login-form">
+                <h2>Log in to ForgeBloom</h2>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <div class="login-options">
+                    <!-- <label><input type="checkbox" name="remember">Remember Me</label>
+                    <a href="#" class="forgot-link">Forgot Password?</a> -->
+                </div>
+
+                <button type="submit">Login</button>
+                <!-- <p class="create-account">Don't have an account? <a href="#">Create one</a></p> -->
+            </form>
+
+            <div id="logout-container" class="logout-container" style="display:none;">
+                <p>You are logged in.</p>
+                <button id="logoutBtn">Logout</button>
+            </div>
+        </main>
+
+        <!-- JS Scripts -->
+        <script src="js/login.js"></script>
+        <script src="js/logout.js"></script>
+        <script src="js/toggle-nav.js"></script>
+    </body>
+</html>

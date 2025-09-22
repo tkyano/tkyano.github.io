@@ -87,6 +87,14 @@ main {
     color:purple;
 }
 
+.error {
+    color:red;
+}
+
+input {
+    max-width:100%;
+}
+
 .sub-section a {
     text-decoration:none;
     color:var(--primary-color);
@@ -102,30 +110,34 @@ main {
 }
 
 /* Animations */
-#animation-fun {
-    background:#a0ccd8;
-    padding:20px;
-    height:300px;
-    position:relative;
-}
-
-#ball-area {
-    position:relative;
-}
-
-#ball, #circle {
-    height: 30px;
-    width:30px;
-    background:var(--circle-color);
-    border-radius:50px;
-    position:relative;
-    left:35%;
-}
-
 #ball {
-    animation-name: fun;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+    margin-top:10px;
+    background:#2B91AD;
+    height:50px;
+    width:50px;
+    border-radius: 50px;
+    position:relative;
+}
+
+.bounce {
+    animation-name: ball-bounce;
+    animation-duration: 2s;
+    animation-iteration-count: 5;
+}
+
+@keyframes ball-bounce {
+    0% {top:0px;}
+    50% {top:200px;}
+    100% {top:0px;}
+}
+
+@keyframes color-change {
+    0% {background:#2B91AD;}
+    20% {background:#FFB58A;}
+    40% {background:pink;}
+    60% {background:green;}
+    80% {background:red;}
+    100% {background:yellow;}
 }
 
 /* Donations */
@@ -234,22 +246,20 @@ footer p {
 }
 
 .clicked {
-    background: magenta;
-    color: white;
+    background:magenta;
+    color:white;
 }
 
 .happy {
-    background: yellow;
-    color: black;
+    background:yellow;
+    color:blak;
+    border:2px dotted orange;
 }
 
 .sad {
-    background: blue;
-    color: white;
-}
-
-.clear {
-    background: rgba(255, 255, 255, 100);
+    background:navy;
+    color:white;
+    border:2px solid skyblue;
 }
 
 #map {
