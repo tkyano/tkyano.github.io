@@ -1,0 +1,103 @@
+/* Main Page Style Sheet */
+
+/* Structure */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1b2221;
+    color: #9ff0e9;
+}
+
+#content {
+    background-color: #3c615e;
+    color: #f1f1f1;
+    width: 80%;
+    margin: auto;
+    padding: 5%;
+}
+
+
+
+#main-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#main-assignments {
+    margin-top: 20px;
+}
+
+#main-projects{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#main-footer {
+    background-color: #2e4543; /* same as .col1of3 */
+    padding: 15px;
+    border: 1px solid #000000;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.col1of3 {
+    background-color: #2e4543;
+    padding: 15px;
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col1of3 img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 10px 0;
+    border: 1px solid #000000;
+    display: block;
+}
+
+.col1of3 h4 {
+    text-align: center;
+}
+
+/* Link Style */
+a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+
+/* Tables */
+
+
+/* Images */
+
+
+/* Topography */
+h1 {
+    color: #9ff0e9;
+}
+
+h3 {
+    color: #9ff0e9;
+    text-align: center;
+}
+
+/* Larger Devices */
+@media only screen and (min-width: 760px) {
+    #main-assignments, 
+    #main-projects {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .col1of3 {
+        flex: 1 1 30%;
+    }
+}
