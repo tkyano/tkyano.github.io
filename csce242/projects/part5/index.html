@@ -1,0 +1,85 @@
+<!--Credit to Scryfall, for the JSON file containing information on the Magic the Gathering Cards-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project Part 3: HTML and CSS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="content">
+            <header>
+                <div class="logo-container">
+                    <img id="main-logo" src="images/forgebloom-logo.png">
+                    <h1 id="forge-h1">ForgeBloom</h1>
+                </div>
+                <!--Based on Portia's code from js-intro.html file-->
+                <div id="toggle-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <nav id="main-nav">
+                    <ul id="nav-items" class="hide-small">
+                        <li><a href="index.html" class="active-tab">Home</a></li>
+                        <li><a href="browse-cards.html">Browse Cards</a></li>
+                        <li><a href="create-deck.html">Create a Deck</a></li>
+                        <li><a href="my-decks.html">My Decks</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+
+            <main class="homepage-layout">
+            <aside class="featured-cards">
+                <section class="intro-blurb">
+                    <h2>Welcome to ForgeBloom</h2>
+                    <p>ForgeBloom is your creative hub for browsing, building, and exploring Magic: The Gathering decks.</p>
+                </section>
+                <h2>Featured Cards</h2>
+                <div class="cards-container">
+                    <div class="featured-card" id="random-pic"></div>
+                    <div class="featured-card" id="random-pic-2"></div>
+                    <div class="featured-card" id="random-pic-3"></div>
+                    <div class="featured-card" id="random-pic-4"></div>
+                    <div class="featured-card" id="random-pic-5"></div>
+                    <div class="featured-card" id="random-pic-6"></div>                
+                </div>
+            </aside>
+
+            <section class="featured-decks">
+                <div class="search-bars">
+                    <div class="search-box">
+                        <label for="search-cards">Search Cards</label>
+                        <!--Using placeholder like https://www.w3schools.com/jsref/prop_text_placeholder.asp-->
+                        <input type="text" id="search-cards" placeholder="Type to search cards...">
+                    </div>
+                </div>
+
+                <!--If i want to have only featured cards-->
+                <!--
+                <div class="cards-container">
+                    <div class="featured-card" id="random-pic-3"></div>
+                    <div class="featured-card" id="random-pic-4"></div>
+                    <div class="featured-card" id="random-pic-5"></div>
+                </div>
+                -->
+
+                <h2>Featured Decks</h2>
+                <div class="deck-row" id="featured-decks-container">
+                    
+                </div>
+            </section>
+            </main>
+        </div>
+
+        <!--JS Script-->
+        <script src="js/toggle-nav.js"></script>
+        <script src="js/featured-cards.js"></script>
+        <script src="js/featured-decks.js"></script>
+        <script src="js/index.js"></script>
+        <script src="browse-cards.html"></script>
+
+    </body>
+</html>

@@ -1,103 +1,150 @@
-/* Main Page Style Sheet */
-
-/* Structure */
+:root {
+    --bg: #12191A;
+    --primary: #3E8E7E;
+    --secondary: #40805f;
+    --text-light: #E6E6E6;
+    --text-dark: #1B1B1B;
+    --border: #2C3A3B;
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #1b2221;
-    color: #9ff0e9;
+    background-color: var(--bg);
+    color: var(--text-light);
+    margin: 0;
+    padding: 0;
 }
 
 #content {
-    background-color: #3c615e;
-    color: #f1f1f1;
+    background-color: var(--primary);
+    color: var(--text-light);
     width: 80%;
     margin: auto;
-    padding: 5%;
+    padding: 4%;
+    box-sizing: border-box;
 }
-
-
 
 #main-header {
     text-align: center;
     margin-bottom: 20px;
 }
 
-#main-assignments {
+#array-examples {
     margin-top: 20px;
 }
 
-#main-projects{
+#array-projects {
     text-align: center;
     margin-bottom: 20px;
 }
 
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 25, 26, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* So that we can put the popup ontop of the other images */
+}
+
+#popup.hidden {
+    display: none;
+}
+
+#popup-content {
+    background-color: var(--secondary);
+    color: var(--text-light);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+    max-width: 90%;
+    max-height: 90%;
+    text-align: center;
+    position: relative;
+}
+
+#popup-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+#close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 24px;
+    color: #333;
+}
+
 #main-footer {
-    background-color: #2e4543; /* same as .col1of3 */
+    background-color: var(--secondary);
     padding: 15px;
-    border: 1px solid #000000;
+    border: 1px solid var(--border);
     text-align: center;
     margin-top: 20px;
 }
 
-
-.col1of3 {
-    background-color: #2e4543;
+.col1of4 {
+    background-color: var(--secondary);
     padding: 15px;
-    border: 1px solid #000000;
+    border: 1px solid var(--border);
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.col1of3 img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin: 10px 0;
-    border: 1px solid #000000;
-    display: block;
-}
-
-.col1of3 h4 {
+    box-sizing: border-box;
     text-align: center;
+    border-radius: 6px;
+    position: relative;
 }
 
-/* Link Style */
+.col1of4 img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border: 1px solid var(--border);
+    display: block;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+.col1of4 h4 {
+    margin: 10px 0 5px;
+    color: var(--text-dark);
+}
+
+.col1of4 p {
+    text-align: center;
+    margin: 8px 0 0 0;
+    font-weight: bold;
+    color: var(--text-light);
+}
+
 a {
-    color: #f1f1f1;
+    color: var(--text-light);
     text-decoration: none;
 }
 
-
-/* Tables */
-
-
-/* Images */
-
-
-/* Topography */
-h1 {
-    color: #9ff0e9;
+.hidden {
+    display: none;
 }
 
-h3 {
-    color: #9ff0e9;
-    text-align: center;
-}
-
-/* Larger Devices */
 @media only screen and (min-width: 760px) {
-    #main-assignments, 
-    #main-projects {
+    #array-examples,
+    #array-projects {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
         justify-content: space-between;
     }
 
-    .col1of3 {
-        flex: 1 1 30%;
+    .col1of4 {
+        flex: 1 1 22%; 
     }
 }

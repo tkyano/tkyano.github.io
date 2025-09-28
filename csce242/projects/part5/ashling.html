@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ForgeBloom - Featured: Ashling Storm</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+    <body data-deck="ashlingstorm">
+        <div id="content">
+            <header>
+                <div class="logo-container">
+                    <img id="main-logo" src="images/forgebloom-logo.png" alt="ForgeBloom Logo">
+                    <h1 id="forge-h1">ForgeBloom</h1>
+                </div>
+                <div id="toggle-nav">
+                    <div></div><div></div><div></div>
+                </div>
+                <nav id="main-nav">
+                    <ul id="nav-items" class="hide-small">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse-cards.html">Browse Cards</a></li>
+                        <li><a href="create-deck.html">Create a Deck</a></li>
+                        <li><a href="my-decks.html">My Decks</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="deck-builder-page">
+                <h1 id="deck-title" data-preset="ashling">Ashling Storm</h1>
+
+                <div class="deck-builder-content">
+                    <section class="current-deck">
+                        <h2>Deck List <span id="deck-count">(0 cards)</span></h2>
+                        <div id="deck-list" class="deck-cards-grid"></div>
+                    </section>
+
+                    <div class="deck-tools-bottom">
+                        <button id="export-deck">Export Deck</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <script src="js/toggle-nav.js"></script>
+        <script src="js/featured-decks.js"></script>
+    </body>
+</html>
