@@ -284,8 +284,9 @@ footer p {
 }
 
 #map {
-    width:100%;
+    width:90%;
     height:500px;
+    margin: 5px;
 }
 
 .transparent {

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ForgeBloom - New Deck</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </head>
+    <body>
+        <div id="content">
+            <header>
+                <div class="logo-container">
+                    <img id="main-logo" src="images/forgebloom-logo.png" alt="ForgeBloom Logo">
+                    <h1 id="forge-h1">ForgeBloom</h1>
+                </div>
+                <div id="toggle-nav">
+                    <div></div><div></div><div></div>
+                </div>
+                <nav id="main-nav">
+                    <ul id="nav-items" class="hide-small">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse-cards.html">Browse Cards</a></li>
+                        <li><a href="create-deck.html" class="active-tab">Create a Deck</a></li>
+                        <li><a href="my-decks.html">My Decks</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="deck-builder-page">
+                <h1 id="deck-title" data-preset="new">
+                    <span id="deck-text">Your Deck Name Here</span>
+                     <i id="edit-title" class="fa-solid fa-pencil" title="Edit Deck Title" style="cursor:pointer; margin-left:8px;"></i>
+                </h1>
+
+                <div class="deck-builder-content">
+                <section class="card-search">
+                    <input type="search" id="card-search-input" placeholder="Search cards...">
+                    <div id="card-results" class="search-results-grid"></div>
+                </section>
+
+                <section class="current-deck">
+                    <h2>Your Deck <span id="deck-count">(0 cards)</span></h2>
+                    <div id="deck-list" class="deck-cards-grid"></div>
+                </section>
+
+                <div class="deck-tools-bottom">
+                    <button id="export-deck">Export Deck</button>
+                    <button id="import-deck">Import Deck</button>
+                    <input type="file" id="file-input" style="display:none;" accept=".json">
+                    <button id="clear-deck">Clear Deck</button>
+                </div>
+            </main>
+        </div>
+
+        <script src="js/preset-decks.js"></script>
+        <script src="js/toggle-nav.js"></script>
+        <script src="js/create-deck.js"></script>
+    </body>
+</html>

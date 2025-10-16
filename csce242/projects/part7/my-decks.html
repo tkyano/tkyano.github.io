@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project Part 3: HTML and CSS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="content">
+            <header>
+                <div class="logo-container">
+                    <img id="main-logo" src="images/forgebloom-logo.png">    
+                    <h1 id="forge-h1">ForgeBloom</h1>
+                </div>
+                <!--Based on Portia's code from js-intro.html file-->
+                <div id="toggle-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <nav id="main-nav">
+                    <ul id="nav-items" class="hide-small">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse-cards.html">Browse Cards</a></li>
+                        <li><a href="create-deck.html">Create a Deck</a></li>
+                        <li><a href="my-decks.html" class="active-tab">My Decks</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="deck-builder-layout">
+                <section class="mydeck-container">
+                    <h2>My Decks</h2>
+                    <div id="my-decks-content" class="mydeck-row">
+                        <a href="mono-red-burn.html" class="mydeck-card">
+                            <img src="images/ashling.jpg" alt="Mono Red Burn">
+                            <div class="mydeck-info">
+                                <p>Mono Red Burn</p>
+                                <p>Fast and fiery—deal damage quickly to overwhelm your opponent before they can react</p>
+                            </div>
+                        </a>
+
+                        <a href="blue-red-spells.html" class="mydeck-card">
+                            <img src="images/izzet.jpg" alt="Blue/Red Spells">
+                            <div class="mydeck-info">
+                                <p>Blue/Red Spells</p>
+                                <p>Spell-heavy deck that controls the board while casting powerful instants and sorceries</p>
+                            </div>
+                        </a>
+
+                        <a href="white-blue-bounce.html" class="mydeck-card">
+                            <img src="images/arbiter.jpg" alt="White/Blue Bounce">
+                            <div class="mydeck-info">
+                                <p>White/Blue Bounce</p>
+                                <p>Bounce and reset opponent’s threats while building a solid defense for the late game</p>
+                            </div>
+                        </a>
+
+                        <a href="blue-control.html" class="mydeck-card">
+                            <img src="images/gitaxius.jpg" alt="Blue Control">
+                            <div class="mydeck-info">
+                                <p>Blue Control</p>
+                                <p>Counter their plans, draw extra cards, and dominate the late game with precision</p>
+                            </div>
+                        </a>
+
+                        <a href="green-creature.html" class="mydeck-card">
+                            <img src="images/ghalta.jpg" alt="Green Creature">
+                            <div class="mydeck-info">
+                                <p>Green Creature</p>
+                                <p>Flood the board with mighty creatures and take advantage of strong combat synergies</p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+                <aside class="deck-tools">
+                    <a href="new-deck.html" class="new-deck-btn">New Deck</a>
+
+                    <div class="filter-group">
+                        <h3>Format</h3>
+                        <select>
+                            <option value="any"></option>
+                            <option>Commander</option>
+                            <option>Standard</option>
+                            <option>Pauper</option>
+                            <option>Modern</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Colors</h3>
+                        <label><input type="checkbox">White</label>
+                        <label><input type="checkbox">Black</label>
+                        <label><input type="checkbox">Blue</label>
+                        <label><input type="checkbox">Red</label>
+                        <label><input type="checkbox">Green</label>
+                        <label><input type="checkbox">Colorless</label>
+                    </div>
+
+                    <div class="filter-group">
+                        <select>
+                            <option>Any</option>
+                            <option>&lt; 60</option>
+                            <option>60 Cards</option>
+                            <option>100 Cards</option>
+                        </select>
+                    </div>
+                </aside>
+            </main>
+        </div>
+
+
+        <!--JS Script-->
+        <script src="js/toggle-nav.js"></script>
+        <script src="js/create-deck.js"></script>
+    </body>
+</html>

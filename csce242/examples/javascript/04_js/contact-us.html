@@ -36,14 +36,42 @@
             </header>
             <main class="columns">
                 <section class="one">
-                    
-                </section>
-                <section class="one">
                     <h3>Our Location</h3>
-                    
+                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6963.283285882948!2d-77.04173089997317!3d38.898630763320604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7bcdecbb1df%3A0x715969d86d0b76bf!2sThe%20White%20House!5e0!3m2!1sen!2sus!4v1760457013441!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+
+                <section class="one">
+                    <!-- Form action API Endpoint  -->
+                    <form action="https://api.web3forms.com/submit" method="POST" id="form">
+
+                        <!-- Your Access key here. Don't worry this can be public -->
+                        <input type="hidden" name="access_key" value="98ff7b25-909c-4bb7-bba6-60ec759bde11">
+
+                        <!-- Optional: Can be type="hidden" or type="text" for subject -->
+                        <input type="hidden" name="subject" value="New Submission from Web3Forms">
+
+                        <!-- Optional: From Name you want to see in the email
+                            Default is "Notifications". you can overwrite here -->
+                        <input type="hidden" name="from_name" value="Your Website Name">
+
+                        <!-- Optional: Redirect URL after form submission -->
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+                        <!-- Optional: Add botcheck for basic spam protection. captcha is recommened -->
+                        <input type="checkbox" name="botcheck" id="" style="display: none;">
+
+                        <!-- Add your form fields here -->
+                        <input type="text" name="name" required>
+                        <input type="email" name="email" required>
+                        <textarea name="message" required></textarea>
+
+                        <button type="submit">Submit Form</button>
+
+                    </form>
                 </section>
             </main>
         </div>
         <script src="js/toggle-nav.js"></script>
+        <script src="js/contact.js"></script>
     </body>
 </html>
