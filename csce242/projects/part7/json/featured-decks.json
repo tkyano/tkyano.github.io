@@ -2,7 +2,7 @@
   {
     "_id": "ashling",
     "name": "Ashling Storm",
-    "image": "images/ashling.jpg",
+    "image": "https://tkyano.github.io/csce242/projects/part7/images/ashling.jpg",
     "description": "A fast red deck with burn and discard",
     "cards": {
       "Abrade": 1,
@@ -88,7 +88,7 @@
   {
     "_id": "clement",
     "name": "Clement Frogs",
-    "image": "images/clement.webp",
+    "image": "https://tkyano.github.io/csce242/projects/part7/images/clement.webp",
     "description": "A Simic frog tribal deck with ramp and draw",
     "cards": {
       "Aether Channeler": 1,
